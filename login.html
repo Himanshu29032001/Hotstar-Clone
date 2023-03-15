@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <style>
+        *{
+            background-color:beige;
+        }
+        .id{
+            height: 250px;
+            width: 500px;
+            background-color:antiquewhite;  
+        }
+        .l{
+           color: blue;
+           font-size: 30px;
+           text-align: center;
+        }
+        .id U{
+            align-items: center;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+        }
+        .aa{
+            height: 30px;
+            width: 200px;
+            margin-left: 20px;
+        }
+        .bb{
+            height: 30px;
+            width: 50px;
+        }
+        .a{
+            height: 30px;
+            width: 200px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <form action="">
+            <fieldset class="id">
+                <legend class="l">Login</legend>
+                User ID: <input type="text" name="" id="" placeholder="user name" class="aa"><br><br>
+                Password:  <input type="password" name="" id="" placeholder="password" class="a"><br><br>
+                <a href="file:///C:/Users/HIMANSHU%20VISHWAKARMA/Downloads/Desktop/web%20tech/project/hotsater.html"><input type="submit" value="submit" class="bb"  onclick="loginalert()"></a>
+                <input type="reset" value="reset" class="bb">
+            </fieldset>
+        </form>
+    </center>
+
+    <script>
+        function loginalert(){
+
+        if (confirm("Do you want to continue..")){
+            location.href="hotsater.html"
+
+        }
+
+        }
+    </script>
+</body>
+</html>

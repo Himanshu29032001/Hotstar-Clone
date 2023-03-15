@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosater_clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function loginalert() {
+            alert("Do you want to Login..")
+
+            // if (confirm(msg)) {
+            //     window.location.href = "login.html";
+
+            // }
+
+        }
+    </script>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        * {
+            margin: 0;
+        }
+
+        .nav-bar {
+            height: 50px;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            z-index: 100;
+        }
+
+        .nav-items {
+            position: absolute;
+            right: 20px;
+
+
+        }
+
+        .nav-items a {
+            color: whitesmoke;
+            text-decoration: none;
+            font-family: 'Lora', serif;
+            padding: 5px;
+        }
+
+        .nav-items a:hover {
+            text-decoration: underline;
+            color: aqua;
+        }
+
+        .home>img {
+            position: absolute;
+            top: 100px;
+            left: 10px;
+            width: 98%;
+            height: 100px;
+        }
+
+        .T {
+            color: aqua;
+            font-family: 'Lora', serif;
+            font-size: 25px;
+            padding: 5px;
+            margin-top: 20px;
+        }
+
+        .traending img {
+            height: 300px;
+            width: 235px;
+            margin: 5px;
+            border: 2px;
+            border-radius: 5px;
+        }
+
+        .traending img:hover {
+            transform: scale(1.3);
+            transition: all 200ms ease-in-out;
+
+        }
+
+        .N {
+            color: aqua;
+            font-family: 'Lora', serif;
+            font-size: 25px;
+            padding: 5px;
+            margin-top: 30px;
+        }
+
+        .newlyadded img {
+            height: 300px;
+            width: 235px;
+            margin: 5px;
+            border: 2px;
+            border-radius: 5px;
+        }
+
+        .newlyadded img:hover {
+            transform: scale(1.3);
+            transition: all 200ms ease-in-out;
+        }
+
+        .d-block-w-100 {
+
+            height: 600px;
+            width: 98%;
+            border: 2px;
+            border-radius: 20px;
+            margin-left: 15px;
+            margin-top: 70 px;
+        }
+
+        .F {
+            color: aqua;
+            font-family: 'Lora', serif;
+            font-size: 25px;
+            padding: 5px;
+            margin-top: 30px;
+        }
+
+        .favorites img {
+            height: 300px;
+            width: 235px;
+            margin: 5px;
+            border: 2px;
+            border-radius: 5px;
+        }
+
+        .favorites img:hover {
+            transform: scale(1.3);
+            transition: all 200ms ease-in-out;
+        }
+
+        .A {
+            color: aqua;
+            font-family: 'Lora', serif;
+            font-size: 25px;
+            padding: 5px;
+            margin-top: 30px;
+        }
+
+        .about a {
+            color: whitesmoke;
+            text-decoration: none;
+            font-family: 'Lora', serif;
+            padding: 5px;
+        }
+
+        .about a:hover {
+            text-decoration: underline;
+            color: aqua;
+        }
+
+        .text {
+            color: whitesmoke;
+            font-family: 'Lora', serif;
+            font-size: 10px;
+            width: 50%;
+        }
+
+        .ca {
+            color: whitesmoke;
+            font-family: 'Lora', serif;
+            font-size: 25px;
+            padding: 5px;
+            margin-top: 30px;
+        }
+
+        .bi-bi-facebook {
+            color: whitesmoke;
+        }
+
+        .bi-bi-facebook:hover {
+            color: aqua;
+        }
+
+        .bi-bi-twitter {
+            color: whitesmoke;
+        }
+
+        .bi-bi-twitter:hover {
+            color: aqua
+        }
+
+        .cb {
+            color: whitesmoke;
+            font-family: 'Lora', serif;
+            font-size: 25px;
+            padding: 5px;
+            margin-top: 30px;
+        }
+
+        .icon1 {
+            position: absolute;
+            height: 50px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .text {
+            position: absolute;
+        }
+
+        .z {
+            position: absolute;
+            right: 400px;
+        }
+
+        .y {
+            position: absolute;
+            right: 50px;
+
+        }
+
+        .p {
+            border: 2px solid;
+            border-radius: 5px;
+            height: 25px;
+        }
+
+        .a {
+            border: 2px solid;
+            border-radius: 5px;
+            height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="nav-logo">
+            <img src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg"
+                alt="">
+        </div>
+        <div class="nav-items">
+            <a href="#Home">Home</a>
+            <a href="#Traending">Traending</a>
+            <a href="#Newly added">Newly added</a>
+            <a href="#Favorites">Favorites</a>
+            <a href="login.html" onclick="loginalert()">Login</a>
+            <a href="#About">About</a>
+            <!-- <button oneclick="loginalert()">Login</button> -->
+        </div>
+    </div>
+    <div class="home" id="Home">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hm_m1/sources/r1/cms/prod/6882/676882-m"
+                        class="d-block-w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/old_images/MOVIE/3314/1770003314/1770003314-h"
+                        class="d-block-w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/9238/1389238-h-11a04d2e30e1"
+                        class="d-block-w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://shifu.hotstarext.com/SOURCE/VOD/cd-2023-01-31/thorbpdr_desk-02733fe9-a050-49b9-a4df-740ced57bb6a.jpg"
+                        class="d-block-w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/4469/674469-h"
+                        class="d-block-w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <h2 class="T">Traending</h2>
+    <div class="traending" id="Traending">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/9917/1459917-v-159f6fd1719a"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/200/1430200-h-ad2d6c505c3e"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/8727/1448727-v-984e086fc891"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/5051/1405051-h-aa6e7cfc2bed"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/3639/1433639-v-4667d2acb4c6"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/4787/1434787-v-b89e30762633"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/5455/305455-v" alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/4574/1284574-v-91e44b0ae20e"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/old_images/vertical/MOVIE/2789/1000212789/1000212789-v"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/3669/593669-v" alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/7639/1307639-v-e58374d4d501"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/1275/1431275-v-44de728a151b"
+            alt="">
+    </div>
+
+    <h2 class="N">Newly added</h2>
+    <div class="newlyadded" id="Newly added">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/4855/1414855-h-d3c144f8834a"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/6237/1296237-h-5662015305e4"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/9218/1389218-h-2a35a38e4b54"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/4416/674416-h" alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/4294/754294-h" alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/old_images/MOVIE/4189/1000074189/1000074189-h"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/1689/1441689-v-62ff70f22138"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/1965/1441965-v-6561f230c549"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/9970/1309970-v-8589b0d35717"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/1677/1311677-v-447760c9cc6d"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/2985/1462985-v-47e2d5241515"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/6498/1316498-v-00e7de2a48a6"
+            alt="">
+    </div>
+
+    <h2 class="F">Favorites</h2>
+    <div class="favorites" id="Favorites">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/2445/1462445-v-2a48363cb7e6"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/8299/1328299-v-41830f478c3f"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/2353/1282353-v-ba90d44ce003"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/2347/1282347-v-57b71e72275e"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/old_images/vertical/MOVIE/3257/1770003257/1770003257-v"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/1691/1011691-v-657881703c09"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/1514/1161514-v-8c2341c419fd"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/6407/1366407-v-79ac9f6e4661"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/7973/1317973-v-f6a964bf4713"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/88/1100088-v-b96714f721d0"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/8721/1078721-v-868cbfb9539d"
+            alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/5157/875157-v" alt="">
+    </div>
+
+    <h2 class="A">About</h2>
+    <div class="about" id="About">
+        <a href="##">About Disney+ Hotstar</a>
+        <a href="##">Terms of Use</a>
+        <a href="##">Privacy Policy</a>
+        <a href="##">FAQ</a>
+        <a href="##">Feedback</a>
+        <a href="##">Careers</a>
+        <!-- <div class="text">© 2023 STAR. All Rights Reserved. HBO, Home Box Office and all related channel and programming logos are service marks of, and <br> all related programming visuals and elements are the property of, Home Box Office, Inc. All rights reserved</div> -->
+
+        <div class="icon1">
+            <div class="text">© 2023 STAR. All Rights Reserved. HBO, Home Box Office and all related channel and
+                programming logos are service marks of, and <br> all related programming visuals and elements are the
+                property of, Home Box Office, Inc. All rights reserved</div>
+            <!-- <h2 class="ca">Connect with us :</h2> -->
+            <div class="z">
+                <h2 class="ca">Connect with us :</h2>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi-bi-facebook" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                </svg>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi-bi-twitter" viewBox="0 0 16 16">
+                        <path
+                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                    </svg>
+                </span>
+            </div>
+
+            <div class="y">
+                <h2 class="cb">Diseney+ Hotstar App</h2>
+                <a href="##"><img src="play.jpeg" alt="" class="p"></a>
+                <a href="##"><img src="apple.jpeg" alt="" class="a"></a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
